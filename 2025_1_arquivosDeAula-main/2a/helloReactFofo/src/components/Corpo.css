@@ -1,0 +1,13 @@
+.container-corpo{
+    height: 100%;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem{
+    width: 50%;
+}
+
