@@ -1,31 +1,25 @@
 import { useState } from 'react'
 import './App.css'
+import Conversao from './components/Conversao'
+import Conversao2 from './components/Conversao2'
+import Estados from './components/Estados'
+import Avisos from './components/Avisos'
+import Temperatura from './components/Temperatura'
 
 function App() {
-  const [usuario, setUsuario] = useState()
-  const [nome,setNome] = useState()
-
-  function lerNome(){
-    let nome = prompt("digite o nome")
-    setNome(nome)
-  }
-  function lerUsuario(){
-    let resposta = prompt("digite o novo usuario")
-    setUsuario(resposta)
-  }
+  const [usuario, setUsuario] = useState("Bilu")
+  const [senha, setSenha] = useState()
 
   return (
     <>
-      <h1>ESTADOS</h1>
-      nome: {nome}
-      <div></div>
-      Usuario: {usuario}
-      <div>
-      <button onClick={lerNome}>trocar nome</button>
-      <button onClick={lerUsuario}>trocar ususario</button>
-      </div>
+      <Avisos />
+      <Conversao2 />
+      <Conversao />
+      <Estados />
+      <Temperatura />
     </>
   )
 }
 
 export default App
+
