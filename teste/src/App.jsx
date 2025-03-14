@@ -5,6 +5,8 @@ import Conversao2 from './components/Conversao2'
 import Estados from './components/Estados'
 import Avisos from './components/Avisos'
 import Temperatura from './components/Temperatura'
+import Anobissexto from './components/Anobissexto'
+import ConversãoTempo from './components/ConversãoTempo'
 
 function App() {
   const [usuario, setUsuario] = useState("Bilu")
@@ -12,6 +14,8 @@ function App() {
 
   return (
     <>
+      <ConversãoTempo />
+      <Anobissexto />
       <Avisos />
       <Conversao2 />
       <Conversao />
