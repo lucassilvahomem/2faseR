@@ -7,6 +7,7 @@ import Avisos from './components/Avisos'
 import Temperatura from './components/Temperatura'
 import Anobissexto from './components/Anobissexto'
 import ConversãoTempo from './components/ConversãoTempo'
+import Trajetopomar from './components/Trajetopomar'
 
 function App() {
   const [usuario, setUsuario] = useState("Bilu")
@@ -21,6 +22,7 @@ function App() {
       <Conversao />
       <Estados />
       <Temperatura />
+      <Trajetopomar />
     </>
   )
 }
