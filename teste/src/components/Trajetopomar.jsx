@@ -1,38 +1,34 @@
 import React from 'react'
-import './Projetopomar.css'
+import './Trajetopomar.css'
+import { useState } from 'react'
 
 function Trajetopomar() {
-    const [maça, setMaças] = useState(0)
-    const [laranja, setLaraja] = useState(0)
-    const [bergamota, setBergamota] = useState(0)
-    const [banana, setBanana] = useState(0)
-    const [pera, setPera] = useState(0)
-    const [resultado, setResultado] = useState('resultado não calculado')
+    const [resultado, setResultado] = useState(0)
+    const precoMaça = 1.50;
+    const precoLaranja = 2;
+    const precoBergamota = 1;
+    const precoBanana = 1.20;
+    const precoPera = 0.50;
     
     function Compra(){
-        maça = Number(prompt("digite o quanto de maçãs voce quer comprar"))
-        laranja = Number(prompt("digite o quanto de laranjas voce quer comprar"))
-        bergamota = Number(prompt("digite o quanto de bergamotas voce quer comprar"))
-        banana = Number(prompt("digite o quanto de bananas voce quer comprar"))
-        pera = Number(prompt("digite o quanto de peras voce quer comprar"))
-        maça = 1,50
-        laranja = 2
-        bergamota = 1
-        banana = 1,20
-        pera = 0,50
-        resultado = maça + laranja + bergamota + banana + pera
+      const  quantidadeMaça = Number(prompt("digite o quanto de maçãs voce quer comprar"));
+      const  quantidadeLaranja = Number(prompt("digite o quanto de laranjas voce quer comprar"));
+      const  quantidadeBergamota = Number(prompt("digite o quanto de bergamotas voce quer comprar"));
+      const  quantidadeBanana = Number(prompt("digite o quanto de bananas voce quer comprar"));
+      const  quantidadePera = Number(prompt("digite o quanto de peras voce quer comprar"));
+
+      const total = (quantidadeMaça * precoMaça) + (quantidadeLaranja * precoLaranja) + (quantidadeBergamota * precoBergamota) + (quantidadeBanana * precoBanana) + (quantidadePera * precoPera);
+
+      setResultado(total);  
     }
         
     return (
       <div className='container-trajetopomar'>
-        <h2>Trajeto pomar</h2>
-
-        <button onClick={Compra}>comprar</button>
-        <p>
-        {resultado}
-        </p>
-    </div>
-  )
+      <h2>Trajeto Pomar</h2>
+      <button onClick={Compra}>Comprar</button>
+      <p>Total da compra: R${resultado.toFixed(2)}</p>
+      </div>
+  );
 }
 
 export default Trajetopomar
