@@ -1,3 +1,8 @@
+.Mes-error{
+  color: red;
+  font-size: ;
+}
+
 .container-app{
   border: 1px solid black;
   display: flex;  
