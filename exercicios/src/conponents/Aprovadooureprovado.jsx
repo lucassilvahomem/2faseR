@@ -6,7 +6,7 @@ function Aprovadooureprovado() {
     const[inputNota2, setinputNota2] = useState()
 
 function Calcularnotafinal(){
-    let media = (inputNota1 + inputNota2) / 2
+    let media = (Number(inputNota1) + Number(inputNota2)) / 2
     if(media >= 7){
         alert("voce passou")
     }else if(media < 7 && media >= 4){
