@@ -24,9 +24,9 @@ function Calcularalmento(){
         value={inputNovo}
         onChange={(event) => setinputNovo(event.target.value)}/>
         <button onClick={Calcularalmento}>resultado</button>
-        {resultado > 0 && <div>
-        almento: {resultado.tofixed(2)}
-        </div>
+        {resultado > 0 && 
+        almento {resultado.tofixed(2)
+        
         }
     </div>
   )
