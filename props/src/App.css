@@ -4,6 +4,26 @@
   align-items: flex-start;
   gap: 20px;
   flex-wrap: wrap;
+  background-color: darkred;
+}
+
+.inputs{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: blueviolet;
 }
 
 #root {
