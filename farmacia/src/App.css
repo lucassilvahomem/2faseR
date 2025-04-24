@@ -1,0 +1,22 @@
+.container-center{
+  padding: 25px;
+  height: 500px;
+  background-color: var(--cor-1);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.item{
+  background-color: var(--cor-3);
+}
+
+h1{
+  color: var(--cor-5);
+  background-color: var(--cor-4);
+  padding: 25px;
+  border-radius: 15px;
+}
