@@ -7,17 +7,26 @@ function App() {
   return (
     <div>
       <div className='container-topo'>
-      <img src="/img/farmarcia-logo-pq.PNG.png" alt="" />
+      <img className='logo' src="/img/farmarcia-logo-pq.PNG.png" alt="" />
+      <h2>Fármacia da Márcia</h2>
+      <img className='placa' src="/img/farmarcia-placa.PNG.png" alt="" />
       </div>
-      <div className='container-center'>
-        <div className='item'>1</div>
-        <div className='item'>2</div>
-        <div className='item'>3</div>
-        <div className='item'>4</div>
-        <div className='item'>5</div>
+      <div className='centro-topo'>
+        <h1>Camisetas da farmarcia</h1>
+        </div>
+      <div className='container-centro'>
+        <img src="/img/farmarcia-camisetas.PNG.png" alt="" />
+        <label htmlFor="">Camisetas tamanho P</label>
+        <img src="/img/farmarcia-camisetas.PNG.png" alt="" />
+        <label htmlFor="">Camisetas tamanho M</label>
+        <img src="/img/farmarcia-camisetas.PNG.png" alt="" />
+        <label htmlFor="">Camisetas tamanho G</label>
+        <img src="/img/farmarcia-camisetas.PNG.png" alt="" />
+        <label htmlFor="">Camisetas tamanho GG</label>
       </div>
-      <div className='container-down'>
-
+      <div className='container-baixo'>
+        <h2>Cartões da farmacia</h2>
+        <img src="/img/farmarcia-cartoes.PNG.png" alt="" />
       </div>
     </div>
   )
