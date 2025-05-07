@@ -1,0 +1,7 @@
+.container-body{
+    min-height: calc(100vh - 200px);
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

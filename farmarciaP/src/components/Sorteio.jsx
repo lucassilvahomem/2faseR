@@ -9,7 +9,13 @@ function Sorteio() {
     useEffect(() => console.log(nomes),[nomes])
 
     function cadastrarNome(){
-        setNomes([inputNome, ...nomes])
+      setNomes([inputNome, ...nomes])
+      setinputNome('')
+    }
+
+    function sortearCliente(){
+      let i = Math.floor(Math.random() * nomes.length)
+      alert('Cliente nomeado: '+ nomes[i])
     }
 
   return (
@@ -21,7 +27,7 @@ function Sorteio() {
         value={inputNome}
         onChange={(event) => setinputNome(event.target.value)}/>
         <button onClick={cadastrarNome}>Cadastrar</button>
-        <button >Sorteio</button>
+        <button onClick={sortearCliente}>Sorteio</button>
     </div>
   )
 }
