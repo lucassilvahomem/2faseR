@@ -3,7 +3,7 @@ import './Body.css'
 
 function Body() {
     const[inputValor, setinputValor] = useState('')
-    const[valortotal, setValortotal] = useState(15)
+    const[valortotal, setValortotal] = useState([])
     const[inputObjeto, setinputObjeto] = useState('')
     const[objeto, setObjeto] = useState([])
 
@@ -14,6 +14,8 @@ function Body() {
       let valor = Number(inputValor)
       setValortotal([total + valor])
       setinputValor('')
+      setObjeto(inputObjeto)
+      setinputObjeto('')
     }
 
     function Dedito() {
@@ -21,6 +23,8 @@ function Body() {
       let valor = Number(inputValor)
       setValortotal([total - valor])
       setinputValor('')
+      setObjeto(inputObjeto)
+      setinputObjeto('')
     }
 
   return (
@@ -35,6 +39,8 @@ function Body() {
       onChange={(event) => setinputValor(event.target.value)} />
       <button onClick={Credito}>Crédito</button>
       <button onClick={Dedito}>Debito</button>
+      <h2>Relatorio</h2>
+      {objeto}{valortotal}
     </div>
   )
 }
